@@ -392,7 +392,7 @@ class Uri
 
         $root = $_SERVER['SCRIPT_NAME'];
         $root = dirname($root);
-        $root = trim($root, '/');
+        $root = trim($root, DIRECTORY_SEPARATOR);
 
         return $root;
     }
